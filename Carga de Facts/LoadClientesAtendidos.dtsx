@@ -11,8 +11,8 @@
   DTS:LocaleID="7178"
   DTS:ObjectName="LoadClientesAtendidos"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{212C36D3-C115-4F6C-BEBD-A890C007ED9F}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{E880179A-5F04-4874-870F-3FD3530E5F5D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1078,18 +1078,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       refId="Package\Load Clientes Atendidos\Componente de script.Inputs[Entrada 0].Columns[EmployeeID]"
                       cachedDataType="i4"
                       cachedName="EmployeeID"
-                      lineageId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmployeeID]" />
+                      lineageId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].Columns[EmployeeID]" />
                     <inputColumn
                       refId="Package\Load Clientes Atendidos\Componente de script.Inputs[Entrada 0].Columns[NombreEmpleado]"
                       cachedDataType="wstr"
                       cachedLength="31"
                       cachedName="NombreEmpleado"
-                      lineageId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombreEmpleado]" />
+                      lineageId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].Columns[NombreEmpleado]" />
                     <inputColumn
                       refId="Package\Load Clientes Atendidos\Componente de script.Inputs[Entrada 0].Columns[CantidadClientes]"
                       cachedDataType="i4"
                       cachedName="CantidadClientes"
-                      lineageId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].Columns[CantidadClientes]" />
+                      lineageId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].Columns[CantidadClientes]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1104,11 +1104,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </outputs>
             </component>
             <component
-              refId="Package\Load Clientes Atendidos\OLE DB Source"
+              refId="Package\Load Clientes Atendidos\Get AttendClientData"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
-              name="OLE DB Source"
+              name="Get AttendClientData"
               usesDispositions="true"
               version="7">
               <properties>
@@ -1153,7 +1153,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Load Clientes Atendidos\OLE DB Source.Connections[OleDbConnection]"
+                  refId="Package\Load Clientes Atendidos\Get AttendClientData.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[DESKTOP-KP55IUM.Northwind 1]"
                   connectionManagerRefId="Package.ConnectionManagers[DESKTOP-KP55IUM.Northwind 1]"
                   description="The OLE DB runtime connection used to access the database."
@@ -1161,86 +1161,86 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               </connections>
               <outputs>
                 <output
-                  refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output]"
+                  refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmployeeID]"
+                      refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].Columns[EmployeeID]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
-                      lineageId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmployeeID]"
+                      externalMetadataColumnId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
+                      lineageId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].Columns[EmployeeID]"
                       name="EmployeeID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombreEmpleado]"
+                      refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].Columns[NombreEmpleado]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NombreEmpleado]"
+                      externalMetadataColumnId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].ExternalColumns[NombreEmpleado]"
                       length="31"
-                      lineageId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].Columns[NombreEmpleado]"
+                      lineageId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].Columns[NombreEmpleado]"
                       name="NombreEmpleado"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].Columns[CantidadClientes]"
+                      refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].Columns[CantidadClientes]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CantidadClientes]"
-                      lineageId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].Columns[CantidadClientes]"
+                      externalMetadataColumnId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].ExternalColumns[CantidadClientes]"
+                      lineageId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].Columns[CantidadClientes]"
                       name="CantidadClientes"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
+                      refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
                       dataType="i4"
                       name="EmployeeID" />
                     <externalMetadataColumn
-                      refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NombreEmpleado]"
+                      refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].ExternalColumns[NombreEmpleado]"
                       dataType="wstr"
                       length="31"
                       name="NombreEmpleado" />
                     <externalMetadataColumn
-                      refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CantidadClientes]"
+                      refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output].ExternalColumns[CantidadClientes]"
                       dataType="i4"
                       name="CantidadClientes" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
+                      refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
                       dataType="i4"
-                      lineageId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
+                      lineageId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
                       name="EmployeeID" />
                     <outputColumn
-                      refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NombreEmpleado]"
+                      refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Error Output].Columns[NombreEmpleado]"
                       dataType="wstr"
                       length="31"
-                      lineageId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NombreEmpleado]"
+                      lineageId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Error Output].Columns[NombreEmpleado]"
                       name="NombreEmpleado" />
                     <outputColumn
-                      refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CantidadClientes]"
+                      refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Error Output].Columns[CantidadClientes]"
                       dataType="i4"
-                      lineageId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CantidadClientes]"
+                      lineageId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Error Output].Columns[CantidadClientes]"
                       name="CantidadClientes" />
                     <outputColumn
-                      refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1254,7 +1254,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
               refId="Package\Load Clientes Atendidos.Paths[OLE DB Source Output]"
               endId="Package\Load Clientes Atendidos\Componente de script.Inputs[Entrada 0]"
               name="OLE DB Source Output"
-              startId="Package\Load Clientes Atendidos\OLE DB Source.Outputs[OLE DB Source Output]" />
+              startId="Package\Load Clientes Atendidos\Get AttendClientData.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1323,17 +1323,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Tarea Ejecutar SQL"
-          TopLeft="222.499987843137,79.7333327788777" />
+          Size="191.2,41.6"
+          Id="Package\Load Clientes Atendidos"
+          TopLeft="497.4999728178,240.066664997273" />
         <NodeLayout
           Size="126.4,41.6"
           Id="Package\Load Data"
           TopLeft="461.666641442314,126.533332453436" />
         <NodeLayout
-          Size="191.2,41.6"
-          Id="Package\Load Clientes Atendidos"
-          TopLeft="497.4999728178,240.066664997273" />
+          Size="170.4,41.6"
+          Id="Package\Tarea Ejecutar SQL"
+          TopLeft="222.499987843137,79.7333327788777" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
           TopLeft="392.899987843137,100.533332778878">
@@ -1411,8 +1411,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="152,41.6"
-          Id="Package\Load Clientes Atendidos\OLE DB Source"
+          Size="176.8,41.6"
+          Id="Package\Load Clientes Atendidos\Get AttendClientData"
           TopLeft="299.999995529652,130.999998047948" />
         <NodeLayout
           Size="180,41.6"
@@ -1420,30 +1420,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="373.999994426966,214.99999679625" />
         <EdgeLayout
           Id="Package\Load Clientes Atendidos.Paths[OLE DB Source Output]"
-          TopLeft="375.999995529652,172.599998047948">
+          TopLeft="388.399995529652,172.599998047948">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="87.9999988973141,42.3999987483024"
+              EndConnector="75.599998897314,42.399998748302"
               Start="0,0"
-              End="87.9999988973141,34.8999987483024">
+              End="75.599998897314,34.899998748302">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.1999993741512" />
+                    End="0,17.199999374151" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.1999993741512"
-                    Point2="0,21.1999993741512"
-                    Point3="4,21.1999993741512" />
+                    Point1="0,17.199999374151"
+                    Point2="0,21.199999374151"
+                    Point3="4,21.199999374151" />
                   <mssgle:LineSegment
-                    End="83.9999988973141,21.1999993741512" />
+                    End="71.599998897314,21.199999374151" />
                   <mssgle:CubicBezierSegment
-                    Point1="83.9999988973141,21.1999993741512"
-                    Point2="87.9999988973141,21.1999993741512"
-                    Point3="87.9999988973141,25.1999993741512" />
+                    Point1="71.599998897314,21.199999374151"
+                    Point2="75.599998897314,21.199999374151"
+                    Point3="75.599998897314,25.199999374151" />
                   <mssgle:LineSegment
-                    End="87.9999988973141,34.8999987483024" />
+                    End="75.599998897314,34.899998748302" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1456,7 +1456,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load Clientes Atendidos\OLE DB Source">
+    design-time-name="Package\Load Clientes Atendidos\Get AttendClientData">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

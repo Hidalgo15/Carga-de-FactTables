@@ -11,8 +11,8 @@
   DTS:LocaleID="7178"
   DTS:ObjectName="LoadFactOrders"
   DTS:PackageType="5"
-  DTS:VersionBuild="56"
-  DTS:VersionGUID="{A9CDC6D0-8457-4A2A-966B-1F0BC4ADE133}">
+  DTS:VersionBuild="58"
+  DTS:VersionGUID="{2B586F1F-86B7-4A06-B60D-94A5F57B0944}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -179,9 +179,10 @@ using System.Runtime.CompilerServices;
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SC_ac740873e2814c79a1e0772390e0d741</RootNamespace>
     <AssemblyName>SC_ac740873e2814c79a1e0772390e0d741</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -817,23 +818,23 @@ public class Variables
                       dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
                     <arrayElement
                       dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
   <msb:PropertyGroup>
-    <msb:Language>msBuild</msb:Language>
     <msb:CodeName>SC_ac740873e2814c79a1e0772390e0d741</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_ac740873e2814c79a1e0772390e0d741</msb:DisplayName>
-    <msb:ProjectId>{F2477209-5F3E-4843-BD8A-4A26168E63CF}</msb:ProjectId>
+    <msb:ProjectId>{C4AB48B3-66D3-4C84-A283-E7A02B241C6C}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_ac740873e2814c79a1e0772390e0d741.csproj" />
     <msb:File Include="main.cs" />
     <msb:File Include="BufferWrapper.cs" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
     <msb:File Include="Properties\Settings.settings" />
     <msb:File Include="Properties\AssemblyInfo.cs" />
     <msb:File Include="Properties\Resources.resx" />
     <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
   </msb:ItemGroup>
 </c:Project>]]></arrayElement>
                     <arrayElement
@@ -968,14 +969,14 @@ namespace SC_ac740873e2814c79a1e0772390e0d741.Properties {
                     <arrayElement
                       dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAGEL82cAAAAAAAAAAOAAIiALATAAACQAAAAIAAAAAAAA4kMA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAEoZ82cAAAAAAAAAAOAAIiALATAAACQAAAAIAAAAAAAA3kMA
 AAAgAAAAYAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACgAAAAAgAAAAAAAAMAYIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAJBDAABPAAAAAGAAAEgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAIxDAABPAAAAAGAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAIAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA6CMAAAAgAAAAJAAAAAIA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA5CMAAAAgAAAAJAAAAAIA
 AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAYAAAAAYAAAAmAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAIAAAAACAAAALAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADE
-QwAAAAAAAEgAAAACAAUANCcAAKQbAAABAAAAAAAAANhCAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+LnJlbG9jAAAMAAAAAIAAAAACAAAALAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADA
+QwAAAAAAAEgAAAACAAUANCcAAKAbAAABAAAAAAAAANRCAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBQAAAoqHgIoFQAACioTMAsAUAAAAAEAABECA28HAAAG
 A28JAAAGA28LAAAGA28NAAAGA28PAAAGA28RAAAGA28TAAAGA28VAAAGA28ZAAAGA28XAAAGKAQA
 AAZvFgAACgoSACgXAAAKKhMwAgCOAAAAAgAAERIAKBgAAAp9CQAABBIAAn0KAAAEEgADfQsAAAQS
@@ -1009,7 +1010,7 @@ AAQCfAkAAAQoRwAACioAAABBZAAAAgAAAKwAAAC2AQAAYgIAABgAAAAAAAAAAgAAAC4AAABVAgAA
 gwIAABgAAAAAAAAAAAAAABMAAACRAgAApAIAABoAAAAXAAABAAAAAA4AAACyAgAAwAIAABkAAAAX
 AAABNgJ8CQAABAMoSAAACioAAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAAADAK
 AAAjfgAAnAoAABQMAAAjU3RyaW5ncwAAAACwFgAAwAEAACNVUwBwGAAAEAAAACNHVUlEAAAAgBgA
-ACQDAAAjQmxvYgAAAAAAAAACAAABVxeiCwkLAAAA+gEzABYAAAEAAAA8AAAACQAAABgAAAAtAAAA
+ACADAAAjQmxvYgAAAAAAAAACAAABVxeiCwkLAAAA+gEzABYAAAEAAAA8AAAACQAAABgAAAAtAAAA
 GAAAAAEAAABIAAAAEwAAAAMAAAAFAAAAGQAAABoAAAACAAAAAgAAAAEAAAAHAAAAAQAAAAEAAAAD
 AAAAAAAGBgEAAAAAAAYAxwRdCQYAWwVdCQYA4ANKCQ8A0QkAAAYADQRPBwYAqgRPBwYAiwRPBwYA
 QgVPBwYA5wRPBwYAAAVPBwYAPwRPBwYAWgSjBQoAGwXwAgYAJgldCQYAJgMHBwYAJARdCQYA4AVd
@@ -1044,8 +1045,8 @@ gwD5ADkKiwABAT0JBgD5AJ0BkQBRAWEHlwBZAZsCnQBhAbIIpAD5AA8KqgBpAf4GsAD5AMMLtwBx
 AZQLvQB5AG0CxAB5APkLzAAZAT0J0gA5AT0JBgDJAD0JEACZAbwBSQBxAPIBfwDBANsB6wDRAD0J
 /QDRAIcKBAGhAZAFCgHBAREDEgHBAcYBGQEMADIJKQEUAPIBfwAUAMwKQgHZAWsDBgC5ADUCRwFB
 AaYKSwHhAbYCUQHBALMHVgHBANYKBgDBANMCGwAuAAsAMwIuABMAPAIuABsAWwIuACMAZAIuACsA
-jQIuADMAjQIuADsAjQIuAEMAZAIuAEsAkwIuAFMAjQIuAFsAqgJDAGMAHAOAAGsA+ALhAHMAHAPj
-AJMAHAMjAXMAHAPpApsAWwIJA5sAWwKgBYsAHAMoADIA2gADAAEABQAVAAYAFgAHABcACAAZAAAA
+jQIuADMAjQIuADsAjQIuAEMAZAIuAEsAkwIuAFMAjQIuAFsAqgJDAGMAGAOAAGsA9ALhAHMAGAPj
+AJMAGAMjAXMAGAPpApsAWwIJA5sAWwKgBYsAGAMoADIA2gADAAEABQAVAAYAFgAHABcACAAZAAAA
 UAEDAgAASAYHAgAAawEDAgAAcQYHAgAAXAELAgAAWwYHAgAAQQEDAgAAMgYHAgAAGwIPAgAAmQYH
 AgAACgwUAgAA7gYHAgAAKAsYAgAA2gYHAgAAiQEDAgAAhgYHAgAAmgoLAgAAwwYHAgAAdwMDAgAA
 rgYHAgAAgQEcAgAAwQULAgAAoggiAgAASwMoAgAAxAouAgIABwADAAIACAAFAAIACQAHAAIACgAJ
@@ -1117,7 +1118,7 @@ EUAATwByAGQAZQByAEkARAAAFUAAUAByAG8AZAB1AGMAdABJAEQAABdAAEMAdQBzAHQAbwBtAGUA
 cgBJAEQAABdAAEUAbQBwAGwAbwB5AGUAZQBJAEQAABVAAFUAbgBpAHQAUAByAGkAYwBlAAATQABR
 AHUAYQBuAHQAaQB0AHkAABNAAEQAaQBzAGMAbwB1AG4AdAAAEUAAUwBoAGkAcABWAGkAYQAAFUAA
 TwByAGQAZQByAEQAYQB0AGUAABlAAFMAaABpAHAAQQBkAGQAcgBlAHMAcwAADUUAcgByAG8AcgAg
-AAAAAAD3r6gIF4zbTbs0NfU5XyXuAAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARI9BSABARJVBiAB
+AAAAAABpRVW6OO3sT5PMLNxGd02WAAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARI9BSABARJVBiAB
 ARGAlQQHARE5BCAAETkEBwERJAQAABFhBzABAQEQHgAECgERJAQgABJFCSADARJ1HQgSeQMGEnUD
 Bh0IBCABCAgEIAECCAQgAQ4IBSABEUkIBCABBggEIAEMCAMgAAIHIAICDhGApQUgAR0ICAUgABKA
 qQUgABKArQYgARKAsQ4FIAASgIUFIAASgLUGIAESgLkcBQAAEoC9BiABHBKAwQcAARI9EYDFBSAA
@@ -1129,14 +1130,14 @@ ARIMDyAKEkUICA4IEUkIDAgIDgMgAAgEIAARSQMgAAYDIAAMCSAEAQgOEnUSeQUgAQESfQUAABKA
 jQUAABKAkQYAAQESgJEEAAASIAMAAAEDKAAIAygAAgMoAA4EKAARSQMoAAYDKAAMBSgAEoCFBQgA
 EoCNBQgAEoCRBAgAEiAIAQAIAAAAAAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEA
 AgAAAAAAKAEAI1NDX2FjNzQwODczZTI4MTRjNzlhMWUwNzcyMzkwZTBkNzQxAAAFAQAAAAAWAQAR
-Q29weXJpZ2h0IEAgIDIwMjUAAE0BABwuTkVURnJhbWV3b3JrLFZlcnNpb249djQuNy4yAQBUDhRG
-cmFtZXdvcmtEaXNwbGF5TmFtZRQuTkVUIEZyYW1ld29yayA0LjcuMiMBAB5TY3JpcHRNYWluKzxM
-b2FkRmFjdFRhYmxlPmRfXzMAAAQBAAAAAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3Vy
-Y2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5l
-dXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5S
-dW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAALhDAAAAAAAAAAAAANJDAAAA
-IAAAAAAAAAAAAAAAAAAAAAAAAAAAAADEQwAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUu
-ZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAAA
+Q29weXJpZ2h0IEAgIDIwMjUAAEkBABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuNwEAVA4URnJh
+bWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFtZXdvcmsgNC43IwEAHlNjcmlwdE1haW4rPExvYWRG
+YWN0VGFibGU+ZF9fMwAABAEAAAAAAAC0AAAAzsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMu
+UmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJh
+bCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRp
+bWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAAtEMAAAAAAAAAAAAAzkMAAAAgAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAMBDAAAAAAAAAAAAAAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwA
+AAAAAP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAAA
 ABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABYYAAA
 7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4A
 AAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEA
@@ -1163,7 +1164,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAADAAAAOQzAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAADAAAAOAzAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1230,54 +1231,54 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       refId="Package\Load FactOrder\Componente de script.Inputs[Entrada 0].Columns[OrderID]"
                       cachedDataType="i4"
                       cachedName="OrderID"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[OrderID]" />
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[OrderID]" />
                     <inputColumn
                       refId="Package\Load FactOrder\Componente de script.Inputs[Entrada 0].Columns[ProductID]"
                       cachedDataType="i4"
                       cachedName="ProductID"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[ProductID]" />
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[ProductID]" />
                     <inputColumn
                       refId="Package\Load FactOrder\Componente de script.Inputs[Entrada 0].Columns[CustomerID]"
                       cachedDataType="wstr"
                       cachedLength="5"
                       cachedName="CustomerID"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[CustomerID]" />
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[CustomerID]" />
                     <inputColumn
                       refId="Package\Load FactOrder\Componente de script.Inputs[Entrada 0].Columns[EmployeeID]"
                       cachedDataType="i4"
                       cachedName="EmployeeID"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[EmployeeID]" />
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[EmployeeID]" />
                     <inputColumn
                       refId="Package\Load FactOrder\Componente de script.Inputs[Entrada 0].Columns[UnitPrice]"
                       cachedDataType="cy"
                       cachedName="UnitPrice"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[UnitPrice]" />
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[UnitPrice]" />
                     <inputColumn
                       refId="Package\Load FactOrder\Componente de script.Inputs[Entrada 0].Columns[Quantity]"
                       cachedDataType="i2"
                       cachedName="Quantity"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[Quantity]" />
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[Quantity]" />
                     <inputColumn
                       refId="Package\Load FactOrder\Componente de script.Inputs[Entrada 0].Columns[Discount]"
                       cachedDataType="r4"
                       cachedName="Discount"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[Discount]" />
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[Discount]" />
                     <inputColumn
                       refId="Package\Load FactOrder\Componente de script.Inputs[Entrada 0].Columns[ShipVia]"
                       cachedDataType="i4"
                       cachedName="ShipVia"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[ShipVia]" />
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[ShipVia]" />
                     <inputColumn
                       refId="Package\Load FactOrder\Componente de script.Inputs[Entrada 0].Columns[ShipAddress]"
                       cachedDataType="wstr"
                       cachedLength="60"
                       cachedName="ShipAddress"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[ShipAddress]" />
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[ShipAddress]" />
                     <inputColumn
                       refId="Package\Load FactOrder\Componente de script.Inputs[Entrada 0].Columns[OrderDate]"
                       cachedDataType="i4"
                       cachedName="OrderDate"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[OrderDate]" />
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[OrderDate]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1292,11 +1293,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               </outputs>
             </component>
             <component
-              refId="Package\Load FactOrder\Get Data"
+              refId="Package\Load FactOrder\Get OrderData"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
-              name="Get Data"
+              name="Get OrderData"
               usesDispositions="true"
               version="7">
               <properties>
@@ -1341,7 +1342,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Load FactOrder\Get Data.Connections[OleDbConnection]"
+                  refId="Package\Load FactOrder\Get OrderData.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[DESKTOP-KP55IUM.Northwind 2]"
                   connectionManagerRefId="Package.ConnectionManagers[DESKTOP-KP55IUM.Northwind 2]"
                   description="The OLE DB runtime connection used to access the database."
@@ -1349,215 +1350,215 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               </connections>
               <outputs>
                 <output
-                  refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output]"
+                  refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[OrderID]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[OrderID]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[OrderID]"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[OrderID]"
+                      externalMetadataColumnId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[OrderID]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[OrderID]"
                       name="OrderID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[ProductID]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      externalMetadataColumnId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[ProductID]"
                       name="ProductID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[CustomerID]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[CustomerID]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[CustomerID]"
+                      externalMetadataColumnId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[CustomerID]"
                       length="5"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[CustomerID]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[CustomerID]"
                       name="CustomerID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[EmployeeID]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[EmployeeID]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[EmployeeID]"
+                      externalMetadataColumnId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[EmployeeID]"
                       name="EmployeeID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[UnitPrice]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[UnitPrice]"
                       dataType="cy"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[UnitPrice]"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[UnitPrice]"
+                      externalMetadataColumnId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[UnitPrice]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[UnitPrice]"
                       name="UnitPrice"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[Quantity]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[Quantity]"
                       dataType="i2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[Quantity]"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[Quantity]"
+                      externalMetadataColumnId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[Quantity]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[Quantity]"
                       name="Quantity"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[Discount]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[Discount]"
                       dataType="r4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[Discount]"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[Discount]"
+                      externalMetadataColumnId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[Discount]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[Discount]"
                       name="Discount"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[ShipVia]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[ShipVia]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[ShipVia]"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[ShipVia]"
+                      externalMetadataColumnId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[ShipVia]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[ShipVia]"
                       name="ShipVia"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[ShipAddress]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[ShipAddress]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[ShipAddress]"
+                      externalMetadataColumnId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[ShipAddress]"
                       length="60"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[ShipAddress]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[ShipAddress]"
                       name="ShipAddress"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[OrderDate]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[OrderDate]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[OrderDate]"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].Columns[OrderDate]"
+                      externalMetadataColumnId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[OrderDate]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].Columns[OrderDate]"
                       name="OrderDate"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[OrderID]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[OrderID]"
                       dataType="i4"
                       name="OrderID" />
                     <externalMetadataColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
                       dataType="i4"
                       name="ProductID" />
                     <externalMetadataColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[CustomerID]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[CustomerID]"
                       dataType="wstr"
                       length="5"
                       name="CustomerID" />
                     <externalMetadataColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
                       dataType="i4"
                       name="EmployeeID" />
                     <externalMetadataColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[UnitPrice]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[UnitPrice]"
                       dataType="cy"
                       name="UnitPrice" />
                     <externalMetadataColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[Quantity]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[Quantity]"
                       dataType="i2"
                       name="Quantity" />
                     <externalMetadataColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[Discount]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[Discount]"
                       dataType="r4"
                       name="Discount" />
                     <externalMetadataColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[ShipVia]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[ShipVia]"
                       dataType="i4"
                       name="ShipVia" />
                     <externalMetadataColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[ShipAddress]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[ShipAddress]"
                       dataType="wstr"
                       length="60"
                       name="ShipAddress" />
                     <externalMetadataColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output].ExternalColumns[OrderDate]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output].ExternalColumns[OrderDate]"
                       dataType="i4"
                       name="OrderDate" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output]"
+                  refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[OrderID]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[OrderID]"
                       dataType="i4"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[OrderID]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[OrderID]"
                       name="OrderID" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[ProductID]"
                       dataType="i4"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[ProductID]"
                       name="ProductID" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[CustomerID]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[CustomerID]"
                       dataType="wstr"
                       length="5"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[CustomerID]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[CustomerID]"
                       name="CustomerID" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
                       dataType="i4"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
                       name="EmployeeID" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[UnitPrice]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[UnitPrice]"
                       dataType="cy"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[UnitPrice]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[UnitPrice]"
                       name="UnitPrice" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[Quantity]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[Quantity]"
                       dataType="i2"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[Quantity]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[Quantity]"
                       name="Quantity" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[Discount]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[Discount]"
                       dataType="r4"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[Discount]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[Discount]"
                       name="Discount" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[ShipVia]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[ShipVia]"
                       dataType="i4"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[ShipVia]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[ShipVia]"
                       name="ShipVia" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[OrderDate]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[OrderDate]"
                       dataType="i4"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[OrderDate]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[OrderDate]"
                       name="OrderDate" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[ShipAddress]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[ShipAddress]"
                       dataType="wstr"
                       length="60"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[ShipAddress]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[ShipAddress]"
                       name="ShipAddress" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1571,7 +1572,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               refId="Package\Load FactOrder.Paths[OLE DB Source Output]"
               endId="Package\Load FactOrder\Componente de script.Inputs[Entrada 0]"
               name="OLE DB Source Output"
-              startId="Package\Load FactOrder\Get Data.Outputs[OLE DB Source Output]" />
+              startId="Package\Load FactOrder\Get OrderData.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1696,8 +1697,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="120,41.6"
-          Id="Package\Load FactOrder\Get Data"
+          Size="146.4,41.6"
+          Id="Package\Load FactOrder\Get OrderData"
           TopLeft="335.99999499321,98.999998524785" />
         <NodeLayout
           Size="180,41.6"
@@ -1705,30 +1706,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           TopLeft="428.999993607402,257.9999961555" />
         <EdgeLayout
           Id="Package\Load FactOrder.Paths[OLE DB Source Output]"
-          TopLeft="395.99999499321,140.599998524785">
+          TopLeft="409.19999499321,140.599998524785">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="122.999998614192,117.399997630715"
+              EndConnector="109.799998614192,117.399997630715"
               Start="0,0"
-              End="122.999998614192,109.899997630715">
+              End="109.799998614192,109.899997630715">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,54.6999988153577" />
+                    End="0,54.6999988153575" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,54.6999988153577"
-                    Point2="0,58.6999988153577"
-                    Point3="4,58.6999988153577" />
+                    Point1="0,54.6999988153575"
+                    Point2="0,58.6999988153575"
+                    Point3="4,58.6999988153575" />
                   <mssgle:LineSegment
-                    End="118.999998614192,58.6999988153577" />
+                    End="105.799998614192,58.6999988153575" />
                   <mssgle:CubicBezierSegment
-                    Point1="118.999998614192,58.6999988153577"
-                    Point2="122.999998614192,58.6999988153577"
-                    Point3="122.999998614192,62.6999988153577" />
+                    Point1="105.799998614192,58.6999988153575"
+                    Point2="109.799998614192,58.6999988153575"
+                    Point3="109.799998614192,62.6999988153575" />
                   <mssgle:LineSegment
-                    End="122.999998614192,109.899997630715" />
+                    End="109.799998614192,109.899997630715" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1741,7 +1742,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load FactOrder\Get Data">
+    design-time-name="Package\Load FactOrder\Get OrderData">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
